@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(img/116339479019986de0c2dec80add478b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.chess {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 13px;
+    margin-top: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgb(0, 204, 255);
+    outline: none;
+}
+
+#Submit {
+    color: transparent;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    max-width: 350px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Submit:hover {
+    background-color: rgba(0, 204, 255, 0.6);
+}
+
+#matn {
+    margin-top: 20px;
+    color: green;
+    font-size: 18px;
+}
+
+#mat {
+    margin-top: 20px;
+    color: red;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .chess {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+    }
+    .spans {
+        font-size: 14px;
+    }
+    .spans span {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chess {
+        width: 90%;
+        max-width: 300px;
+    }
+    input,
+    #Submit {
+        width: 100%;
+    }
+    .spans {
+        font-size: 12px;
+    }
+    .spans span {
+        margin-left: 10px;
+    }
+}
+
+#loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #00ffcc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.imgbutton {
+    align-items: center;
+}
+
+.btn {
+    width: 300px;
+    height: 80px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 7px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.059);
+}
+
+img {
+    margin-top: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 30px;
+}

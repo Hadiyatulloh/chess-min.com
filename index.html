@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chess">
+        <h1 style="padding: 10px; font-size: 55px;"><span style="color: rgb(65, 62, 62);">Welcome to</span> Chess.com</h1>
+        <h2 style="padding: 10px; font-size: 35px;">Registration</h2>
+        <div class="inputList" style="padding: 10px;">
+            <input style="color: white; background-color: rgba(255, 255, 255, 0.217); padding-left: 13px; margin-top: 10px; border: 1px solid rgb(255, 255, 255); width: 100%; max-width: 350px; height: 40px; border-radius: 10px;" type="text" id="InputUser" placeholder="UserName"
+                required>
+            <input style="color: white; background-color: rgba(255, 255, 255, 0.217); padding-left: 13px; margin-top: 10px; border: 1px solid rgb(255, 255, 255); width: 100%; max-width: 350px; height: 40px; border-radius: 10px;" type="password" id="InputPassword"
+                placeholder="Password" required>
+            <div class="ploshat">
+                <h3 style="margin-top: 20px;margin-bottom: 10px;text-align: left;">please enter your card number</h3>
+                <input id="Number1" type="text" placeholder="for plus">
+                <input id="Number2" type="text" placeholder="for premium">
+                <input id="Number3" type="text" placeholder="for premium plus">
+            </div>
+        </div>
+        <button id="Submit">Submit</button>
+
+        <p style="margin-top: 20px; margin-bottom: 30px; color: green; font-size: 20px; text-align: left;" id="matn"></p>
+        <p style="margin-top: 20px; margin-bottom: 30px; color: red; font-size: 20px; text-align: left;" id="mat"></p>
+    </div>
+    <div id="loading">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
